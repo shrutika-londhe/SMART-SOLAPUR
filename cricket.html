@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en"  data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Cricket Academy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      color: black;
+      font-weight: bold;
+      font-size: x-large;
+      font-family: "Roboto Slab", serif;
+    }
+
+    .nav-item {
+      gap: 40px;
+      margin-left: 100px;
+    }
+
+    .nav-link.active {
+      margin-left: 20px;
+    }
+
+    .nav-item {
+      margin-left: 220px; /* Adjust this value to move the items to the left */
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: black; /* Optional: to ensure the color remains consistent */
+    }
+
+    .navbar-brand img {
+      margin-right: 10px; /* Space between the logo and text */
+    }
+
+    .navbar {
+      padding-right: 30px; /* Adjust this value to align the navigation items */
+    }
+
+    .nav-item-2 {
+      margin-right: 50px;
+    }
+
+    .dropdown-item {
+      color: blue;
+    }
+
+    .facility {
+      color: blue;
+    }
+
+    .coaches-1 {
+      color: blue;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-family: "Roboto Slab", serif;
+    }
+
+    .footer h2 {
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .footer p {
+      margin: 10px 0;
+      font-size: 1em;
+    }
+
+    .footer a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .social-links a {
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    /* New CSS for Coaches Section */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .coach {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .coach img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .coach-info {
+      max-width: 600px;
+    }
+
+    .coach-info h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .coach-info p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    h2 {
+      font-weight: bolder;
+    }
+    header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-image: url('https://via.placeholder.com/1200x400?text=Cricket+Image');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .main-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .main-content div {
+            position: relative;
+            z-index: 2;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        .academy-summary {
+            margin: 20px 0;
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+        .academy-summary img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .academy-summary-content {
+            position: relative;
+            z-index: 2;
+            background-color: white;
+            color: black;
+            font-weight: 500;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .map-links {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .map-card {
+            flex: 1;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .map-card h3 {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+        }
+        .map-card iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .motivational {
+            background-color:whitesmoke;
+            padding: 10px;
+            color: black;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .motivational{
+          color: black;
+        }
+        .academy-summary{
+          background-color: whitesmoke;
+        }
+       
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assests/Screenshot 2024-07-25 225902.png" alt="Model Cricket Academy logo" height="50"> MODEL CRICKET ACADEMY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              COACHES
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="./public/COATCH.HTML">COACHES</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="./public/facalities.html">Facilities</a></li>
+              <li>Age group 5-19</li>
+              <li>Duration Yearly</li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SOCIAL HANDLE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./public/instagram.html">Instagram</a></li>
+              <li><a class="dropdown-item" href="./public/facebook.html">Facebook Page</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./public/crickherose.html">Crickherose</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- setilb -->
+  <header>
+    <h1>Welcome to Model Cricket Academy</h1>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <div class="academy-summary">
+            <img src="./assests/hardle.webp" alt="Cricket Academy">
+            <div class="academy-summary-content">
+                
+                <p>Our players are continuously performing and playing at the state level. We boast the best coaches and top-notch equipment, including high-quality nets, balls, and turfs. Our academy is committed to nurturing young talent and providing the best training environment.</p>
+            </div>
+        </div>
+
+        <div class="map-links">
+            <div class="map-card">
+                <h3>Branch-1 at Model Public School</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d611.6127818152838!2d75.8933633!3d17.6331453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d9b75110ddab%3A0x972b19544f41f909!2sModel%20Public%20School%2C%20bombay%20park%2C%20D71%2F72%2C%20Bank%20Colony%2C%20Dnyaneshwar%20Nagar%2C%20Patliputra%2C%20Jule%2C%20Solapur%2C%20Maharashtra%20413004!5e0!3m2!1sen!2sin!4v1693772197410!5m2!1sen!2sin" allowfullscreen></iframe>
+            </div>
+            <div class="map-card">
+                <h3>Branch-2 at Park Stadium</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d764.9456164719475!2d75.8819193!3d17.6558867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5da78cce7875d%3A0x36b892ea121407d2!2sPark%20Stadium%2C%20National%20Hwy%209%2C%20Sidheshwar%20Temple%20Area%2C%20Solapur%2C%20Maharashtra%20413001!5e0!3m2!1sen!2sin!4v1693772078107!5m2!1sen!2sin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="motivational">
+            
+            <p>"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do." - Pelé</p>
+            <p>"The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will." - Vince Lombardi</p>
+        </div>
+    </div>
+</div>
+
+  <!-- Main Content Goes Here -->
+  <main>
+    <div class="header">
+      <h1>Meet Our Coaches</h1>
+    </div>
+
+    <div class="container">
+      <div class="coach">
+        <img src="./assests/rohit jadhav.png" alt="Rohit Jadhav">
+        <div class="coach-info">
+          <h2>Rohit Jadhav</h2>
+          <p>Ranji Selector for Maharashtra</p>
+          <p>Senior Selector of Solapur District</p>
+          <p>Head Coach of Academy</p>
+          <p>Played Ranji from Maharashtra</p>
+          <p>10 years of experience in cricket coaching</p>
+        </div>
+      </div>
+
+      <div class="coach">
+        <img src="./assests/satyajeet jadhav.png" alt="Satyajeet Jadhav">
+        <div class="coach-info">
+          <h2>Satyajeet Jadhav</h2>
+          <p>Senior Selector of U-23 Solapur District</p>
+          <p>Played State from Maharashtra</p>
+          <p>10 years of experience in coaching</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    
+    
+    
+    <div class="social-links">
+      <a href="https://www.instagram.com/modelcricket/?hl=en" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/modelcricketacdemy/" target="_blank">Facebook</a>
+    </div>
+    <h3>Model Cricket Academy</h3>
+    <p>@Established since 2017</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
